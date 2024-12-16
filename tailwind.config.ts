@@ -8,6 +8,7 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {},
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
