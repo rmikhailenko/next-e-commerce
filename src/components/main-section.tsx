@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function MainSection() {
   return (
-    <section className="h-[400px]">
+    <section className="h-[300px]">
       <h1 className="uppercase font-bold text-5xl my-16 mx-36">
         Instyle clothing company
       </h1>
