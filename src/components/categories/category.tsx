@@ -11,7 +11,7 @@ export default function Category({ title, image }: Props) {
         width={400}
         alt={`category ${title}`}
       />
-      <h4 className=" rounded absolute bottom-7 right-2/4 translate-x-2/4 text-black bg-white p-3 w-[300px] text-center">
+      <h4 className=" rounded absolute bottom-7 right-2/4 translate-x-1/2 text-black bg-white p-3 w-[300px] text-center">
         {title}
       </h4>
     </article>
