@@ -1,3 +1,9 @@
+import MainSection from "@/components/main-section";
+
 export default function Home() {
-  return <main>Main Page</main>;
+  return (
+    <main>
+      <MainSection />
+    </main>
+  );
 }
