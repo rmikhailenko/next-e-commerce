@@ -1,13 +1,29 @@
 import CategoriesList from "@/components/categories/categories-list";
 import MainSection from "@/components/main-section";
-import PopularProductsList from "@/components/popular-products/popular-products-list";
+import Product from "@/components/products-list/product";
+import ProductsList from "@/components/products-list/products-list";
+import { POPULAR_PRODUCTS, NEW_PRODUCTS } from "@/DUMMY_DATA";
+import { Product as ProductProps } from "@/types/product";
 
 export default function Home() {
   return (
     <main>
       <MainSection />
       <CategoriesList />
-      <PopularProductsList />
+      <ProductsList
+        renderItem={(POPULAR_PRODUCTS: ProductProps) => (
+          <Product key={POPULAR_PRODUCTS.title} {...POPULAR_PRODUCTS} />
+        )}
+        data={POPULAR_PRODUCTS}
+        title="Popular Products"
+      />
+      <ProductsList<ProductProps>
+        renderItem={(NEW_PRODUCTS: ProductProps) => (
+          <Product key={NEW_PRODUCTS.title} {...NEW_PRODUCTS} />
+        )}
+        data={NEW_PRODUCTS}
+        title="New Products"
+      />
     </main>
   );
 }
