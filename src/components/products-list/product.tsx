@@ -1,9 +1,12 @@
 import { Product as Props } from "@/types/product";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Product({ image, price, title }: Props) {
+export default function Product({ image, price, title, id }: Props) {
+  console.log(id);
+
   return (
-    <article>
+    <Link href={`/product/${id}`}>
       <Image
         className="rounded"
         src={image}
@@ -13,6 +16,6 @@ export default function Product({ image, price, title }: Props) {
       />
       <h3 className="text-center pt-3 font-medium">{title}</h3>
       <h4 className="text-center pt-1 font-medium">{price}</h4>
-    </article>
+    </Link>
   );
 }

@@ -5,7 +5,7 @@ import CartWithCounter from "./cart-with-counter";
 
 export default function Header() {
   return (
-    <header className="py-8 flex justify-center">
+    <header className="py-8 flex justify-center border border-black border-solid">
       <div className="flex items-center justify-between w-82 px-3">
         <div className="w-44 flex items-center">
           <MenuIcon />

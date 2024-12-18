@@ -1,0 +1,12 @@
+services:
+  db:
+    image: postgres:17.2
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: wai3Ughi3
+      POSTGRES_USER: postgres
+      PGDATA: /data/postgres
+    volumes:
+       - ./db:/data/postgres
