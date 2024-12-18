@@ -1,9 +1,9 @@
-import { Category } from "./category";
+// import { Category } from "./category";
 
 export type Product = {
-  image: string;
+  id: string;
   title: string;
   price: string;
-  category: Category;
-  id: string;
+  category: string;
+  image: string;
 };
